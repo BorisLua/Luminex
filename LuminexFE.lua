@@ -270,8 +270,11 @@ while #names > 0 do
 		if check then
 			table.remove(names,i)
 			check:Destroy()
-			break
 		end
 	end
 end
 end)
+local Tab = Window:NewTab("Project XL")
+local Section = Tab:NewSection("Project XL")
+Section:NewButton("Tora Script", "An Project XL Script.", function()
+ loadstring(game:HttpGet('https://raw.githubusercontent.com/ToraScript/Script/main/ProjectXL'))()
